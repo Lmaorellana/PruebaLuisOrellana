@@ -40,8 +40,8 @@ namespace ProyectoLuisOrellana.Api.Controllers
         }
 
 
-        [HttpGet("ObtenerIntentos")]
-        public async Task<IActionResult> ObtenerIntentos()
+        [HttpGet("ObtenerTodosLosIntentos")]
+        public async Task<IActionResult> ObtenerTodosLosIntentos()
         {
             var resultado = await intento.GetIntentosAll();
             return Ok(resultado);
